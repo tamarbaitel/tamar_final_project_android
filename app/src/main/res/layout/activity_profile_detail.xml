@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tm_white"
+    android:fillViewport="true"
+    android:layoutDirection="rtl">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btnBackProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="חזרה"
+            android:src="@android:drawable/ic_media_previous"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/tm_text_dark" />
+
+        <ImageButton
+            android:id="@+id/btnProfileOptions"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="אפשרויות"
+            android:src="@android:drawable/ic_menu_more"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/tm_text_dark" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAvatar"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="66dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnBackProfile">
+
+            <ImageView
+                android:id="@+id/ivDetailAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tm_teal_light"
+                android:contentDescription="תמונת פרופיל"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvDetailNameAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="נועה, 24"
+            android:textColor="@color/tm_text_dark"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardAvatar" />
+
+        <TextView
+            android:id="@+id/tvDetailCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="תל אביב 📍"
+            android:textColor="@color/tm_text_muted"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailNameAge" />
+
+        <TextView
+            android:id="@+id/tvAboutLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="עליי:"
+            android:textColor="@color/tm_text_dark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailCity" />
+
+        <TextView
+            android:id="@+id/tvDetailBio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="אוהבת טיולים, מוזיקה וכלבים ♡"
+            android:textColor="@color/tm_text_dark"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvAboutLabel" />
+
+        <TextView
+            android:id="@+id/tvInterestsLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="תחומי עניין:"
+            android:textColor="@color/tm_text_dark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDetailBio" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupInterests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvInterestsLabel" />
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_primary_button"
+            android:text="💬  שליחת הודעה"
+            android:textColor="@color/tm_white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chipGroupInterests" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

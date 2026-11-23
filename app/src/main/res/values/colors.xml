@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tm_teal_primary">#0F8A85</color>
+    <color name="tm_teal_dark">#0A6461</color>
+    <color name="tm_teal_light">#E5F5F4</color>
+    <color name="tm_mint_bg">#EEF7F6</color>
+    <color name="tm_white">#FFFFFF</color>
+    <color name="tm_text_dark">#182226</color>
+    <color name="tm_text_muted">#627278</color>
+    <color name="tm_border_light">#D9E3E2</color>
+    <color name="tm_danger">#D94848</color>
+    <color name="tm_heart">#14968E</color>
+</resources>
