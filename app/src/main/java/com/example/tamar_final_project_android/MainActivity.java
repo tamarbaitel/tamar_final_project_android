@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * מסך פתיחה המנתב למסך ההתחברות וההרשמה של TripMate.
  */
 public class MainActivity extends AppCompatActivity {
-
+//khslif
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+//khalid
 /**
  * AI-generated / assisted class structure (documented for Ministry of Education guidelines).
  * מחלקת מודל המייצגת מועמד/ת לשותפות לטיול הגדול ומחשבת התאמה לפי תחביבים.
